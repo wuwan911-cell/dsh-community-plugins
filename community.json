@@ -1674,5 +1674,17 @@
     "npm": "dsh-streamfold",
     "category": "ui",
     "subcategory": "chat"
+  },
+  {
+    "id": "dsh-relay-reasoning",
+    "name": "中转站推理等级",
+    "nameEn": "Relay Reasoning Effort",
+    "author": "wuwan911-cell",
+    "description": "给 OpenAI 兼容中转站的每个模型加上「关 / 低 / 中 / 高」四档推理等级，直接出现在 DSH 模型选择器里。只发布中转站真正有反应的档位：minimal、xhigh、max 虽被接受但不改变推理量，因此不提供。激活时自动写入 llm-pi-ai 条目的每个模型，不改动 baseURL、密钥与模型列表；写入幂等，已是对的配置不会重复改写。新增中转站无需改插件配置。",
+    "descriptionEn": "Adds four real reasoning levels (off / low / medium / high) to every model on an OpenAI-compatible relay, right in the DSH model picker. Publishes only the levels a relay actually honors: minimal, xhigh and max are accepted but do not change reasoning volume, so they are omitted. Writes automatically into every model of the llm-pi-ai entry on activation without touching baseURL, credentials or the model list, and is idempotent so existing configuration is never rewritten. Adding another relay needs no plugin change.",
+    "repo": "https://github.com/wuwan911-cell/dsh-relay-reasoning",
+    "npm": "dsh-relay-reasoning",
+    "category": "tools",
+    "subcategory": "model"
   }
 ]
